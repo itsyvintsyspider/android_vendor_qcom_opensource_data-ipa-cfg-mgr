@@ -40,6 +40,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
+#include <net/if.h>
 #include <IPACM_Wan.h>
 #include <IPACM_Xml.h>
 #include <IPACM_Log.h>
@@ -50,8 +51,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "IPACM_Defs.h"
 #include <IPACM_ConntrackListener.h>
 #include "linux/ipa_qmi_service_v01.h"
-#ifdef FEATURE_IPACM_HAL
 #include "IPACM_OffloadManager.h"
+#ifdef FEATURE_IPACM_HAL
 #include <IPACM_Netlink.h>
 #endif
 

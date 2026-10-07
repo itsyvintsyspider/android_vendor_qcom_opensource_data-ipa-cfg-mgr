@@ -49,9 +49,7 @@ Skylar Chang
 #include <IPACM_Lan.h>
 #include <IPACM_IfaceManager.h>
 #include <IPACM_ConntrackListener.h>
-#ifdef FEATURE_IPACM_HAL
 #include "IPACM_OffloadManager.h"
-#endif
 
 /* static member to store the number of total wifi clients within all APs*/
 int IPACM_Wlan::total_num_wifi_clients = 0;

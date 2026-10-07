@@ -54,9 +54,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "IPACM_ConntrackListener.h"
 #include <sys/ioctl.h>
 #include <fcntl.h>
-#ifdef FEATURE_IPACM_HAL
 #include "IPACM_OffloadManager.h"
-#endif
 bool IPACM_Lan::odu_up = false;
 
 IPACM_Lan::IPACM_Lan(int iface_index) : IPACM_Iface(iface_index)

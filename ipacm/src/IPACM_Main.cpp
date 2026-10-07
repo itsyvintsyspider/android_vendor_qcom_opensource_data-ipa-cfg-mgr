@@ -69,8 +69,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "IPACM_ConntrackClient.h"
 #include "IPACM_Netlink.h"
 
-#ifdef FEATURE_IPACM_HAL
 #include "IPACM_OffloadManager.h"
+#ifdef FEATURE_IPACM_HAL
 #include <HAL.h>
 #endif
 

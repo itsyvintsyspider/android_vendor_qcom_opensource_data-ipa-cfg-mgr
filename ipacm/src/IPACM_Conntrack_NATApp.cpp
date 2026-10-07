@@ -29,9 +29,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "IPACM_Conntrack_NATApp.h"
 #include "IPACM_ConntrackClient.h"
 #include "IPACM_ConntrackListener.h"
-#ifdef FEATURE_IPACM_HAL
 #include "IPACM_OffloadManager.h"
-#endif
 #include "IPACM_Iface.h"
 
 #define INVALID_IP_ADDR 0x0
