@@ -3,7 +3,7 @@ cc_binary {
     name: "ipacm",
 
     local_include_dirs: ["src"] + ["inc"],
-    header_libs: ["device_kernel_headers"]+["qti_kernel_headers",
+    header_libs: ["device_kernel_headers"]+["qti_kernel_headers", "qti_msm_ipa_header_sm7325",
 	"libutils_headers", "libcutils_headers"],
 
     cflags: ["-v"] + ["-DFEATURE_IPA_ANDROID"] + ["-DFEATURE_IPACM_RESTART"] + [
@@ -83,7 +83,7 @@ cc_fuzz {
     name: "aidl_fuzzer_ipacm",
 
     local_include_dirs: ["src"] + ["inc"],
-    header_libs: ["device_kernel_headers"]+["qti_kernel_headers",
+    header_libs: ["device_kernel_headers"]+["qti_kernel_headers", "qti_msm_ipa_header_sm7325",
 	"libutils_headers", "libcutils_headers"],
 
     cflags: ["-v"] + ["-DFEATURE_IPA_ANDROID"] + ["-DFEATURE_IPACM_RESTART"] + [
